@@ -1,0 +1,29 @@
+snippet rrc
+  import React from 'react';
+
+	export default function ${1:ComponentName} () {
+		return (
+			<div>
+				$1
+			</div>
+		);
+	}
+
+
+snippet rtk
+  import { createSlice } from '@reduxjs/toolkit';
+
+  const initialValues = {};
+
+  const ${1:reducerName}InfoSlice = createSlice({
+    name: '$1',
+    initialState: initialValues,
+    reducers: {
+
+    },
+  });
+
+  export const {  } = $1InfoSlice.actions;
+
+  export default $1InfoSlice.reducer;
+
